@@ -153,7 +153,7 @@ You can also specify individual tests or a group of tests:
 Airflow Integration Tests
 =========================
 
-Some of the tests in Airflow are integration tests. These tests require not only ``airflow-testing`` Docker
+Some of the tests in Airflow are integration tests. These tests require not only ``airflow`` Docker
 image but also extra images with integrations (such as ``redis``, ``mongodb``, etc.).
 
 
@@ -549,7 +549,7 @@ visible to anything that you have installed inside the Docker container.
 Currently forwarded credentials are:
   * all credentials stored in ``${HOME}/.config`` (for example, GCP credentials)
   * credentials stored in ``${HOME}/.gsutil`` for ``gsutil`` tool from GCS
-  * credentials stored in ``${HOME}/.boto`` and ``${HOME}/.s3`` (for AWS authentication)
+  * credentials stored in ``${HOME}/.aws``, ``${HOME}/.boto``, and ``${HOME}/.s3`` (for AWS authentication)
   * credentials stored in ``${HOME}/.docker`` for docker
   * credentials stored in ``${HOME}/.kube`` for kubectl
   * credentials stored in ``${HOME}/.ssh`` for SSH

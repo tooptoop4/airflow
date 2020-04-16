@@ -231,6 +231,11 @@ These integrations allow you to perform various operations within the Microsoft 
      - Operators
      - Sensors
 
+   * - `Azure Batch <https://azure.microsoft.com/en-us/services/batch/>`__
+     - :mod:`airflow.providers.microsoft.azure.hooks.azure_batch`
+     - :mod:`airflow.providers.microsoft.azure.operators.azure_batch`
+     -
+
    * - `Azure Blob Storage <https://azure.microsoft.com/en-us/services/storage/blobs/>`__
      - :mod:`airflow.providers.microsoft.azure.hooks.wasb`
      - :mod:`airflow.providers.microsoft.azure.operators.wasb_delete_blob`
@@ -572,7 +577,7 @@ These integrations allow you to perform various operations within the Google Clo
      -
 
    * - `BigQuery <https://cloud.google.com/bigquery/>`__
-     -
+     - :doc:`How to use <howto/operator/gcp/bigquery>`
      - :mod:`airflow.providers.google.cloud.hooks.bigquery`
      - :mod:`airflow.providers.google.cloud.operators.bigquery`
      - :mod:`airflow.providers.google.cloud.sensors.bigquery`
@@ -788,6 +793,11 @@ These integrations allow you to copy data from/to Google Cloud Platform.
      - `Google Cloud Storage (GCS) <https://cloud.google.com/gcs/>`__
      -
      - :mod:`airflow.providers.google.cloud.operators.adls_to_gcs`
+
+   * - `Facebook Ads <http://business.facebook.com>`__
+     - `Google Cloud Storage (GCS) <https://cloud.google.com/gcs/>`__
+     -
+     - :mod:`airflow.providers.google.facebook_ads_to_gcs.operators.ads`
 
    * - `Google BigQuery <https://cloud.google.com/bigquery/>`__
      - `MySQL <https://www.mysql.com/>`__
@@ -1009,6 +1019,12 @@ These integrations allow you to perform various operations within various servic
      - :mod:`airflow.providers.discord.operators.discord_webhook`
      -
 
+   * - `Facebook Ads <http://business.facebook.com>`__
+     -
+     - :mod:`airflow.providers.facebook.ads.hooks.ads`
+     -
+     -
+
    * - `Google Ads <https://ads.google.com/home/>`__
      - :doc:`How to use <howto/operator/gcp/ads>`
      - :mod:`airflow.providers.google.ads.hooks.ads`
@@ -1174,6 +1190,12 @@ These integrations allow you to perform various operations using various softwar
      -
      - :mod:`airflow.providers.elasticsearch.hooks.elasticsearch`
      -
+     -
+
+   * - `Exasol <https://docs.exasol.com/home.htm>`__
+     -
+     - :mod:`airflow.providers.exasol.hooks.exasol`
+     - :mod:`airflow.providers.exasol.operators.exasol`
      -
 
    * - `GNU Bash <https://www.gnu.org/software/bash/>`__
